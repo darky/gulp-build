@@ -1,23 +1,23 @@
 {
-  "name": "gulp-build",
-  "version": "0.5.3",
+  "name": "gulp-build-promised",
+  "version": "0.6.0",
   "description": "Build files for different environments by swapping in variables",
-  "homepage": "https://github.com/tjeastmond/gulp-build",
+  "homepage": "https://github.com/darrrk/gulp-build",
   "main": "index.js",
   "scripts": {
     "test": "make test"
   },
   "author": {
-    "name": "TJ Eastmond",
-    "email": "tj.eastmond@gmail.com",
-    "url": "http://tjeastmond.com"
+    "name": "Vladislav Botvin",
+    "url": "https://github.com/darrrk"
   },
   "contributors": [
+    "TJ Eastmond <tj.eastmond@gmail.com> (https://tjeastmond.com)",
     "Chris Mendis <chris.mendis@gmail.com> (https://github.com/chrismendis)"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/tjeastmond/gulp-build.git"
+    "url": "git://github.com/darrrk/gulp-build.git"
   },
   "keywords": [
     "underscore",
@@ -25,7 +25,9 @@
     "build",
     "handlebars",
     "partials",
-    "gulp"
+    "gulp",
+    "promised",
+    "async"
   ],
   "license": "MIT",
   "dependencies": {

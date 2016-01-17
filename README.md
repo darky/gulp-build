@@ -1,6 +1,6 @@
 # gulp-build-promised
 
-[gulp-build](/tjeastmond/gulp-build) fork, which based on [promised-handlebars](/nknapp/promised-handlebars).
+[gulp-build](https://github.com/tjeastmond/gulp-build) fork, which based on [promised-handlebars](https://github.com/nknapp/promised-handlebars).
 
 ## The License (MIT)
 Copyright (c) 2016 Vladislav Botvin

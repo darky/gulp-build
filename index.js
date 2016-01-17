@@ -1,6 +1,7 @@
 var through = require('through2');
 var _ = require('underscore');
-var hbs = require('handlebars');
+var promisedHbs = require('promised-handlebars');
+var hbs = promisedHbs(require('handlebars'));
 
 module.exports = function(data, config) {
 	var options = _.extend({
@@ -34,9 +35,10 @@ module.exports = function(data, config) {
 			template = hbs.compile(fileContents);
 		}
 
-		file.contents = new Buffer(template(data));
-
-		return callback(null, file);
+		template(data).done(function(content) {
+			file.contents = new Buffer(content);
+			callback(null, file);
+		});
 	};
 
 	return through.obj(build);
